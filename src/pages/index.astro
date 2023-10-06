@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>CONCEPTO HEXÁGONO</h1>
+
+      <ul>
+        <li>Ilustraciones <code>figma e ilustrator</code></li>
+        <li>Modelos 3D <code>Blender</code></li>
+        <li>
+          Animaciones <code>Davinci Resolve, Blender, Godot, Unity, UE5</code>
+        </li>
+        <li>
+          Programacion de Páginas Web <code>HTML, CSS, JS, Frameworks</code>
+        </li>
+        <li>Hosting <code>Alojamiento en Hostinger</code></li>
+        <li>Documentaciones <code>ir a blogs de Bird & Fang</code></li>
+      </ul>
+      <p>
+        Sitio creado por <a href="birdie">Bird</a> & <a href="fang">Fang</a>.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
