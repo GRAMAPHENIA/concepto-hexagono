@@ -46,6 +46,7 @@ const { title } = Astro.props;
   :root {
     --dark: #1d1d27;
     --light: #c6dcff;
+    --light-text: #dae4f7;
     --white: #fff;
     --link: #f87171;
   }
@@ -69,7 +70,7 @@ const { title } = Astro.props;
     width: 720px;
     max-width: calc(100% - 2em);
     margin: auto;
-    padding: 3em 1em;
+    padding: 0em 1em;
   }
 
   h1,
@@ -110,10 +111,10 @@ const { title } = Astro.props;
     color: var(--link);
   }
   p {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
   }
   .prose p {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
   }
   textarea {
     width: 100%;

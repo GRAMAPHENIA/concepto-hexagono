@@ -3,5 +3,54 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Servicios">
-  <h1>servicios</h1>
+  <section>
+    <h2>Ilustraciones</h2>
+    <p>
+      Nuestro dedicado equipo de artistas visuales trabaja para dar vida a ideas
+      y conceptos a través de ilustraciones. Cada obra representa una fusión de
+      técnicas, diseñadas para transmitir historias, evocar y estimular la
+      imaginación.
+    </p>
+  </section>
+  <section>
+    <h2>Modelado 3D</h2>
+    <p>
+      Exploramos los límites de la tecnología en el modelado 3D. Nuestros
+      conceptos en modelos tridimensionales realistas encuentran aplicaciones en
+      diversos campos, desde la arquitectura hasta la industria del
+      entretenimiento.
+    </p>
+  </section>
+  <section>
+    <h2>Desarrollo Web y Aplicaciones</h2>
+    <p>
+      Nuestros desarrollos y de aplicaciones trabajan con precisión para crear
+      buenas experiencias digitales. Ya sea que necesites una presencia en línea
+      sólida o una aplicación móvil personalizada, estamos listos.
+    </p>
+  </section>
+  <section>
+    <h2>Documentación</h2>
+    <p>
+      La documentación es esencial para el éxito de cualquier proyecto.
+      Ofrecemos servicios de documentación exhaustiva que garantizan la claridad
+      y la eficiencia en cada paso de tu proceso, desde la planificación hasta
+      la implementación.
+    </p>
+  </section>
 </Layout>
+
+<style>
+  section {
+    text-align: left;
+    padding: 100px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 360px) {
+    section {
+      padding: 20px;
+    }
+  }
+</style>

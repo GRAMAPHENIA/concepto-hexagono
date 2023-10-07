@@ -1,10 +1,76 @@
-
-
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Acerca de">
-    <h1>Acerca de</h1>
+  <section>
+    <h2>
+      Bienvenido a
+      <br />
+      <span>[</span>
+      <span class="conhex">Concepto Hexágono</span>
+      <span>]</span>
+    </h2>
+    <p class="italic">
+      Somos una empresa joven y dinámica que se especializa en una amplia gama
+      de servicios creativos y tecnológicos. Nuestro interes por la expresión
+      artística y la tecnología nos impulsa a ofrecer soluciones actuales a
+      nuestros clientes.
+    </p>
+
+    <section>
+      <h1>Inspiradas por la Imaginación</h1>
+      <p>
+        Cada una de las piezas de diseño que presentamos en este espacio es el
+        resultado de un proceso profundo de exploración creativa. Con el
+        respaldo de nuestras habilidades en Figma e Illustrator, transformamos
+        conceptos abstractos en obras visuales que comunican historias, expresan
+        emociones y despiertan la curiosidad.
+      </p>
+      <p>
+        Nuestra principal meta es superar las limitaciones del lienzo y ofrecer
+        piezas que inspiren y conecten a un nivel artístico y emocional. Cada
+        ilustración representa una investigación meticulosa de la creatividad,
+        donde la convergencia de conceptos y habilidades técnicas se traduce en
+        una expresión artística única y significativa.
+      </p>
+    </section>
+  </section>
 </Layout>
 
+<style>
+  section {
+    text-align: left;
+    padding: 100px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: center;
+  }
+  span {
+    color: var(--link);
+  }
+
+  strong {
+    color: var(--light-text);
+  }
+
+  @media screen and (max-width: 360px) {
+    section {
+      padding: 20px;
+    }
+  }
+
+  /* PERSONAL */
+
+  .italic {
+    font-style: italic;
+    padding-bottom: 10px;
+  }
+
+  .conhex {
+    font-size: 28px;
+    color: var(--light);
+  }
+</style>
