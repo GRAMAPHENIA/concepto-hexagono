@@ -3,15 +3,16 @@ import Svggit from "./socials/Svggit.astro";
 import Svginst from "./socials/Svginst.astro";
 import Svgface from "./socials/Svgface.astro";
 import LogoIcono from "./LogoIcono.astro";
+import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
   <nav>
     <a href="/"><LogoIcono /></a>
-    <nav class="internal-links">
-      <a href="/">Inicio</a>
-      <a href="/servicios">Servicios</a>
-      <a href="/acercade">Acerca de</a>
+    <nav>
+      <HeaderLink href="/">inicio</HeaderLink>
+      <HeaderLink href="/servicios">Servicios</HeaderLink>
+      <HeaderLink href="/acercade">Acerca de</HeaderLink>
     </nav>
     <div class="social-links">
       <a href="/" target="_blank">
@@ -49,6 +50,12 @@ import LogoIcono from "./LogoIcono.astro";
     text-underline-offset: 6px;
   }
 
+  /* a.active {
+    color: var(--light);
+    text-decoration: 6px underline var(--light);
+    text-underline-offset: 6px;
+  } */
+
   nav {
     display: flex;
     align-items: center;
@@ -56,6 +63,7 @@ import LogoIcono from "./LogoIcono.astro";
     margin-top: 1rem;
     gap: 1rem;
   }
+
   .social-links {
     display: flex;
   }
