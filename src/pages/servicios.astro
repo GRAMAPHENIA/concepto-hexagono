@@ -3,50 +3,82 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Servicios">
-  <section>
+  <section class="section-uno">
     <h2>Ilustraciones</h2>
-    <p>
-      Nuestro dedicado equipo de artistas visuales trabaja para dar vida a ideas
-      y conceptos a través de ilustraciones. Cada obra representa una fusión de
-      técnicas, diseñadas para transmitir historias, evocar y estimular la
-      imaginación.
-    </p>
+    <div class="section-div">
+      <h1>✒️</h1>
+      <p class="p-especial">
+        Nuestro dedicado equipo de artistas visuales trabaja para dar vida a
+        ideas y conceptos a través de ilustraciones. Cada obra representa una
+        fusión de técnicas, diseñadas para transmitir historias, evocar y
+        estimular la imaginación.
+      </p>
+    </div>
   </section>
   <section>
-    <h2>Modelado 3D</h2>
-    <p>
-      Exploramos los límites de la tecnología en el modelado 3D. Nuestros
-      conceptos en modelos tridimensionales realistas encuentran aplicaciones en
-      diversos campos, desde la arquitectura hasta la industria del
-      entretenimiento.
-    </p>
+    <div class="section-div">
+      <h2>Modelado 3D</h2>
+      <br>
+      <p>
+        Exploramos los límites de la tecnología en el modelado 3D. Nuestros
+        conceptos en modelos tridimensionales realistas encuentran aplicaciones
+        en diversos campos, desde la arquitectura hasta la industria del
+        entretenimiento.
+      </p>
+      <h1>🎲</h1>
+    </div>
   </section>
-  <section>
-    <h2>Desarrollo Web y Aplicaciones</h2>
-    <p>
-      Nuestros desarrollos y de aplicaciones trabajan con precisión para crear
-      buenas experiencias digitales. Ya sea que necesites una presencia en línea
-      sólida o una aplicación móvil personalizada, estamos listos.
-    </p>
+  <section class="section-uno">
+    <h2>Desarrollo Web</h2>
+    <div class="section-div">
+      <h1>🌐</h1>
+      <p class="p-especial">
+        Nuestros desarrollos y de aplicaciones trabajan con precisión para crear
+        buenas experiencias digitales. Ya sea que necesites una presencia en
+        línea sólida o una aplicación móvil personalizada, estamos listos.
+      </p>
+    </div>
   </section>
+
   <section>
-    <h2>Documentación</h2>
-    <p>
-      La documentación es esencial para el éxito de cualquier proyecto.
-      Ofrecemos servicios de documentación exhaustiva que garantizan la claridad
-      y la eficiencia en cada paso de tu proceso, desde la planificación hasta
-      la implementación.
-    </p>
+    <div class="section-div">
+      <h2>Documentación</h2>
+      <br>
+      <p>
+        La documentación es esencial para el éxito de cualquier proyecto.
+        Ofrecemos servicios de documentación exhaustiva que garantizan la
+        claridad y la eficiencia en cada paso de tu proceso, desde la
+        planificación hasta la implementación.
+      </p>
+      <h1>📃</h1>
+    </div>
   </section>
 </Layout>
 
 <style>
   section {
-    text-align: left;
-    padding: 100px 20px;
+    display: block;
+    text-align: right;
+    padding: 50px 20px;
     max-width: 720px;
     margin: 0 auto;
   }
+
+  .section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p-especial {
+    text-align: left;
+  }
+
 
   @media screen and (max-width: 360px) {
     section {
