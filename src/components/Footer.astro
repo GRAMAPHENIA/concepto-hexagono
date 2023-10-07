@@ -7,7 +7,7 @@ const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} Concépto Hexágono.
+  <span class="copy">&copy;</span> {today.getFullYear()} Concepto Hexágono.
   <p>
     Sitio creado por <a href="birdie">Bird</a> & <a href="fang">Fang</a>.
   </p>
@@ -29,12 +29,13 @@ const today = new Date();
 <style>
   footer {
     text-align: center;
+    /* padding-top: 10rem; */
   }
   a {
     color: var(--link);
   }
   a:hover {
-    text-decoration: 2px underline var(--link);
+    text-decoration: 3px underline var(--link);
     color: var(--light);
   }
   .social-links {
@@ -42,6 +43,11 @@ const today = new Date();
     justify-content: center;
     text-align: center;
     gap: 0.5rem;
+  }
+
+  /* ESTILOS PROPIOS */
+  .copy{
+    color: var(--link);
   }
 </style>
 

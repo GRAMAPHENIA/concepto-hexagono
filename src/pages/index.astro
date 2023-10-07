@@ -5,15 +5,27 @@ import Logo from "../components/logo.astro";
 
 <Layout title="Concepto Hexágono">
   <main>
-    <h1 class="title-main">CONCEPTO HEXAGONO</h1>
+    <h1 class="title-main">CONCEPTO HEXÁGONO</h1>
+    <div class="subtitle"><span class="corchetes">[</span>diseños para la Web <span class="corchetes">]</span></div>
     <div class="logo">
       <Logo />
     </div>
+    <h1>↡</h1>
   </main>
 </Layout>
 
 <style>
-  .title-main{
+  .title-main {
     text-align: center;
+  }
+  .subtitle {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .corchetes {
+    color: var(--link);
   }
 </style>
