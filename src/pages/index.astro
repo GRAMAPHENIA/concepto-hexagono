@@ -6,7 +6,10 @@ import Logo from "../components/logo.astro";
 <Layout title="Concepto Hexágono">
   <main>
     <h1 class="title-main">CONCEPTO HEXÁGONO</h1>
-    <div class="subtitle"><span class="corchetes">[</span>diseños para la Web <span class="corchetes">]</span></div>
+    <div class="subtitle">
+      <span class="corchetes">[</span>diseños para la Web <span
+        class="corchetes">]</span>
+    </div>
     <div class="logo">
       <Logo />
     </div>
@@ -17,15 +20,18 @@ import Logo from "../components/logo.astro";
 <style>
   .title-main {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
   }
+
   .subtitle {
     display: flex;
     justify-content: center;
   }
+
   h1 {
     text-align: center;
   }
+
   .corchetes {
     color: var(--link);
   }
