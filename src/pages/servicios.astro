@@ -4,7 +4,11 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Servicios">
   <section class="section-uno">
-    <h2>Ilustraciones</h2>
+    <div class="titulo">
+      <br />
+      <h2>Ilustraciones</h2>
+    </div>
+
     <div class="section-div">
       <h1>✒️</h1>
       <p class="p-especial">
@@ -18,7 +22,7 @@ import Layout from "../layouts/Layout.astro";
   <section>
     <div class="section-div">
       <h2>Modelado 3D</h2>
-      <br>
+      <br />
       <p>
         Exploramos los límites de la tecnología en el modelado 3D. Nuestros
         conceptos en modelos tridimensionales realistas encuentran aplicaciones
@@ -29,13 +33,16 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
   <section class="section-uno">
-    <h2>Desarrollo Web</h2>
+    <div class="titulo">
+      <br />
+      <h2>Web</h2>
+    </div>
     <div class="section-div">
       <h1>🌐</h1>
       <p class="p-especial">
-        Nuestros desarrollos y de aplicaciones trabajan con precisión para crear
-        buenas experiencias digitales. Ya sea que necesites una presencia en
-        línea sólida o una aplicación móvil personalizada, estamos listos.
+        Nuestros desarrollos se trabajan con precisión para crear buenas
+        experiencias digitales. Ya sea que necesites una presencia en línea
+        sólida o una aplicación móvil personalizada, estamos listos.
       </p>
     </div>
   </section>
@@ -43,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
   <section>
     <div class="section-div">
       <h2>Documentación</h2>
-      <br>
+      <br />
       <p>
         La documentación es esencial para el éxito de cualquier proyecto.
         Ofrecemos servicios de documentación exhaustiva que garantizan la
@@ -64,6 +71,16 @@ import Layout from "../layouts/Layout.astro";
     margin: 0 auto;
   }
 
+  .titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titulo h2 {
+    text-align: left;
+    
+  }
+
   .section-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,10 +92,13 @@ import Layout from "../layouts/Layout.astro";
     justify-content: center;
   }
 
+  h2 {
+    text-align: right;
+  }
+
   .p-especial {
     text-align: left;
   }
-
 
   @media screen and (max-width: 360px) {
     section {
