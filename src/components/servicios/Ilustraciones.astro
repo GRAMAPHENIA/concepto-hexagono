@@ -1,0 +1,69 @@
+<section class="section">
+  <div class="titulo">
+    <br />
+    <h2>Ilustraciones</h2>
+  </div>
+
+  <div class="section-div">
+    <div class="huno"><img src="./public/elephant.svg" alt="" /></div>
+    <p class="p-especial">
+      Nuestro dedicado equipo de artistas visuales trabaja para dar vida a ideas
+      y conceptos a través de ilustraciones. Cada obra representa una fusión de
+      técnicas, diseñadas para transmitir historias, evocar y estimular la
+      imaginación.
+    </p>
+  </div>
+</section>
+
+<style>
+  section {
+    display: block;
+    text-align: right;
+    padding: 50px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titulo h2 {
+    text-align: left;
+  }
+
+  .section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .huno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+  .hdos {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  h2 {
+    text-align: right;
+  }
+
+  .p-especial {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 360px) {
+    section {
+      padding: 20px;
+    }
+  }
+</style>
