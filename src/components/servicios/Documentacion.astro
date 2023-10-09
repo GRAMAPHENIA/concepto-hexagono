@@ -1,67 +1,71 @@
 <section>
-    <div class="section-div">
-      <h2>Documentación</h2>
-      <br />
-      <p class="p-especial">
-        La documentación es esencial para el éxito de cualquier proyecto.
-        Ofrecemos servicios de documentación exhaustiva que garantizan la
-        claridad y la eficiencia en cada paso de tu proceso, desde la
-        planificación hasta la implementación.
-      </p>
-      <div class="hdos"><img src="./public/documentacion.svg" alt="" /></div>
+  <div class="section-div">
+    <h2>Documentación</h2>
+    <br />
+    <p class="p-especial">
+      La documentación es esencial para el éxito de cualquier proyecto.
+      Ofrecemos servicios de documentación exhaustiva que garantizan la claridad
+      y la eficiencia en cada paso de tu proceso, desde la planificación hasta
+      la implementación.
+    </p>
+    <div class="hdos">
+      <img
+        src="/documentacion.svg"
+        alt="Imagen rota de: 🚫 Ilustración acerca de la documentación"
+      />
     </div>
-  </section>
+  </div>
+</section>
 
-  <style>
+<style>
+  section {
+    display: block;
+    text-align: right;
+    padding: 50px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titulo h2 {
+    text-align: left;
+  }
+
+  .section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .huno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+  .hdos {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  h2 {
+    text-align: right;
+  }
+
+  .p-especial {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 360px) {
     section {
-      display: block;
-      text-align: right;
-      padding: 50px 20px;
-      max-width: 720px;
-      margin: 0 auto;
+      padding: 20px;
     }
-  
-    .titulo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .titulo h2 {
-      text-align: left;
-    }
-  
-    .section-div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .huno {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-right: 2rem;
-    }
-    .hdos {
-      display: flex;
-      align-items: start;
-      justify-content: start;
-    }
-  
-    h2 {
-      text-align: right;
-    }
-  
-    .p-especial {
-      text-align: right;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    @media screen and (max-width: 360px) {
-      section {
-        padding: 20px;
-      }
-    }
-  </style>
-  
+  }
+</style>

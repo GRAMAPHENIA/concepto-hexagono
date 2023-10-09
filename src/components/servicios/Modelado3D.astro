@@ -8,60 +8,64 @@
       diversos campos, desde la arquitectura hasta la industria del
       entretenimiento.
     </p>
-    <div class="hdos"><img src="./public/susan.png" alt="" /></div>
+    <div class="hdos">
+      <img
+        src="/susan.png"
+        alt="Imagen rota de: 🚫 Ilustración acerca del modelado 3D"
+      />
+    </div>
   </div>
 </section>
 
-
 <style>
+  section {
+    display: block;
+    text-align: right;
+    padding: 50px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titulo h2 {
+    text-align: left;
+  }
+
+  .section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .huno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+  .hdos {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  h2 {
+    text-align: right;
+  }
+
+  .p-especial {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 360px) {
     section {
-      display: block;
-      text-align: right;
-      padding: 50px 20px;
-      max-width: 720px;
-      margin: 0 auto;
+      padding: 20px;
     }
-  
-    .titulo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .titulo h2 {
-      text-align: left;
-    }
-  
-    .section-div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .huno {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-right: 2rem;
-    }
-    .hdos {
-      display: flex;
-      align-items: start;
-      justify-content: start;
-    }
-  
-    h2 {
-      text-align: right;
-    }
-  
-    .p-especial {
-      text-align: right;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    @media screen and (max-width: 360px) {
-      section {
-        padding: 20px;
-      }
-    }
-  </style>
+  }
+</style>
