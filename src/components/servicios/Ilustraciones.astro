@@ -1,75 +1,27 @@
-<section class="section">
-  <div class="titulo">
-    <br />
+<figure>
+  <figcaption>
     <h2>Ilustraciones</h2>
-  </div>
-
-  <div class="section-div">
-    <div class="huno">
-      <img
-      title="Ilustraciones"
-        src="/elephant.svg"
-        alt="Imagen rota de: 🚫 Ilustración acerca de la Ilustración"
-      />
-    </div>
-    <p class="p-especial">
+    <p>
       Nuestro dedicado equipo de artistas visuales trabaja para dar vida a ideas
       y conceptos a través de ilustraciones. Cada obra representa una fusión de
       técnicas, diseñadas para transmitir historias, evocar y estimular la
       imaginación.
     </p>
-  </div>
-</section>
+    <img src="/elephant.svg" alt="Ilustración de un elefante" />
+  </figcaption>
+  <button>Obtener servicio</button>
+</figure>
 
 <style>
-  section {
-    display: block;
-    text-align: right;
-    padding: 50px 20px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-
-  .titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .titulo h2 {
-    text-align: left;
-  }
-
-  .section-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .huno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2rem;
-  }
-  .hdos {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-
-  h2 {
-    text-align: right;
-  }
-
-  .p-especial {
-    text-align: left;
+  .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (min-width: 360px) {
     section {
-      padding: 20px;
+      padding: 40px;
     }
   }
 </style>

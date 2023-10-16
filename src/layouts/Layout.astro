@@ -66,6 +66,9 @@ const { title } = Astro.props;
     --light-text: #dae4f7;
     --white: #fff;
     --link: #f87171;
+    --border: #374151;
+    --button: #c6dcff;
+    --button-hover: #55688a;
   }
 
   body {
@@ -131,13 +134,28 @@ const { title } = Astro.props;
   input {
     font-size: 16px;
   }
+
+  /* 🔴 🧩 BUTTONS 🧩 🔴 */
+
+  button {
+    background: var(--light);
+    padding: 10px 10px;
+    border: var(--border);
+    border-radius: 6px;
+  }
+  button:hover {
+    background: var(--button-hover);
+    cursor: pointer;
+    border: #374151;
+    color: var(--light-text);
+  }
+
   table {
     width: 100%;
   }
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
   }
   code {
     padding: 2px 5px;
@@ -166,6 +184,27 @@ const { title } = Astro.props;
     border: none;
     border-top: 1px solid var(--link);
   }
+
+  /* 🔴 🧩 FIGURE 🧩 🔴 */
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    figure {
+      margin: 40px auto;
+    }
+  }
+
   @media (max-width: 720px) {
     body {
       font-size: 18px;
