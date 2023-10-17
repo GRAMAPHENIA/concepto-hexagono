@@ -12,14 +12,14 @@ import Layout from "../layouts/Layout.astro";
       <span>]</span>
     </h2>
     <p class="italic">
-      Somos un grupo joven y dinámico que se especializa en una amplia gama
-      de servicios creativos y tecnológicos. Nuestro interes por la expresión
+      Somos un grupo joven y dinámico que se especializa en una amplia gama de
+      servicios creativos y tecnológicos. Nuestro interes por la expresión
       artística y la tecnología nos impulsa a ofrecer soluciones actuales a
       nuestros clientes.
     </p>
 
     <section>
-      <h1>Inspirados por la Imaginación</h1>
+      <h1>... por la Imaginación</h1>
       <p>
         Cada una de las piezas de diseño que presentamos en este espacio es el
         resultado de un proceso profundo de exploración creativa. Con el
@@ -35,47 +35,50 @@ import Layout from "../layouts/Layout.astro";
         expresión artística única y significativa.
       </p>
     </section>
+
+    <!-- <section>
+      <div class="popover">
+        <span>¡Pasa el ratón por encima!</span>
+        <div class="popover-content">Contenido</div>
+      </div>
+    </section> -->
   </section>
-</Layout>
 
-<style>
-  section {
-    text-align: left;
-    padding: 100px 20px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  a.active {
-    color: var(--light);
-    text-decoration: 6px underline var(--link);
-    text-underline-offset: 6px;
-  }
-  h2 {
-    text-align: center;
-  }
-  span {
-    color: var(--link);
-  }
-
-  strong {
-    color: var(--light-text);
-  }
-
-  @media screen and (max-width: 360px) {
+  <style>
     section {
-      padding: 20px;
+      text-align: left;
+      padding: 10px 20px;
+      max-width: 720px;
+      margin: 0 auto;
     }
-  }
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    span {
+      color: var(--link);
+    }
 
-  /* PERSONAL */
+    strong {
+      color: var(--light-text);
+    }
 
-  .italic {
-    font-style: italic;
-    padding-bottom: 10px;
-  }
+    @media screen and (max-width: 360px) {
+      section {
+        padding: 20px;
+      }
+    }
 
-  .conhex {
-    font-size: 28px;
-    color: var(--light);
-  }
-</style>
+    /* 🔴 PERSONAL 🔴 */
+
+    .italic {
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+
+    .conhex {
+      font-size: 28px;
+      color: var(--light);
+    }
+  </style>
+</Layout>

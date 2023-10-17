@@ -3,13 +3,14 @@ import Svggit from "./socials/Svggit.astro";
 import Svginst from "./socials/Svginst.astro";
 import Svgface from "./socials/Svgface.astro";
 import LogoIcono from "./LogoIcono.astro";
-import HeaderLink from './HeaderLink.astro';
+import HeaderLink from "./HeaderLink.astro";
+import MenuSvg from "./MenuSvg.astro";
 ---
 
 <header>
   <nav>
     <a href="/"><LogoIcono /></a>
-    <nav>
+    <nav class="nav-desktop">
       <HeaderLink href="/">inicio</HeaderLink>
       <HeaderLink href="/servicios">Servicios</HeaderLink>
       <HeaderLink href="/acercade">Acerca de</HeaderLink>
@@ -25,6 +26,20 @@ import HeaderLink from './HeaderLink.astro';
         <span class="sr-only">Go to Gramaphenia & BirdieOA GitHub repos</span>
         <Svggit />
       </a>
+    </div>
+    <div class="menu-svg popover">
+      <div class="popover-content">Menú</div>
+      <section>
+        <a onclick="window.modal.showModal(); "><MenuSvg /></a>
+        <dialog id="modal">
+          <nav class="menu">
+            <button onclick="window.modal.close();">Cerrar</button>
+            <HeaderLink href="/">inicio</HeaderLink>
+            <HeaderLink href="/servicios">Servicios</HeaderLink>
+            <HeaderLink href="/acercade">Acerca de</HeaderLink>
+          </nav>
+        </dialog>
+      </section>
     </div>
   </nav>
 </header>
@@ -50,6 +65,14 @@ import HeaderLink from './HeaderLink.astro';
     text-underline-offset: 6px;
   }
 
+  .dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    height: 100%; /* Ajusta la altura para centrar verticalmente */
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -58,12 +81,28 @@ import HeaderLink from './HeaderLink.astro';
     gap: 1rem;
   }
 
+  .menu {
+    flex-direction: column;
+  }
+
   .social-links {
     display: flex;
   }
 
   @media (max-width: 720px) {
     .social-links {
+      display: none;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .menu-svg {
+      display: none;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .nav-desktop {
       display: none;
     }
   }

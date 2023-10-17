@@ -199,6 +199,62 @@ const { title } = Astro.props;
     width: 90%;
   }
 
+  /* 🔴 🧩 DIALOG 🧩 🔴 */
+
+  dialog {
+    background: #1d1d2756;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--light);
+    border-radius: 6px;
+  }
+
+  /* 🔴 🧩 FORMULARIOS 🧩 🔴 */
+
+  .p-modal {
+    color: var(--light);
+  }
+
+  /* 🔴 🧩 ESPECIALES POPOVER 🧩 🔴 */
+
+  /* Estilo para el contenedor del popover */
+  .popover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* Estilo para el contenido del popover */
+  .popover-content {
+    display: none;
+    position: absolute;
+    background-color: #201f1f;
+    min-width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 5px;
+    left: -80px;
+  }
+
+  /* Estilo para la flecha del popover en el lado derecho */
+  .popover-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f1f1f1;
+  }
+
+  /* Mostrar el contenido del popover al pasar el ratón por encima */
+  .popover:hover .popover-content {
+    display: block;
+  }
+
   @media screen and (max-width: 768px) {
     figure {
       margin: 40px auto;
@@ -214,7 +270,7 @@ const { title } = Astro.props;
     }
   }
 
-  /* SCROLL */
+  /* 🔴 🧩 SCROLL 🧩 🔴 */
   ::-webkit-scrollbar {
     width: 10px;
   }
