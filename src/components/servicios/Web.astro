@@ -1,73 +1,27 @@
-<section class="section-uno">
-  <div class="titulo">
-    <br />
-    <h2>Web</h2>
-  </div>
-  <div class="section-div">
-    <div class="hdos">
-      <img
-        title="Desarrollo Web"
-        src="/www.svg"
-        alt="Imagen rota de: 🚫 Ilustración acerca de la World Wide Web"
-      />
-    </div>
-    <p class="p-especial">
+
+<figure>
+  <figcaption>
+    <h2>Desarrollo Web</h2>
+    <p>
       Nuestros desarrollos se trabajan con precisión para crear buenas
       experiencias digitales. Ya sea que necesites una presencia en línea sólida
       o una aplicación móvil personalizada, estamos listos.
     </p>
-  </div>
-</section>
+    <img src="/www.svg" alt="Ilustracion para seccion de Desarrollo web" />
+  </figcaption>
+  <button>Obtener servicio</button>
+</figure>
 
 <style>
-  section {
-    display: block;
-    text-align: right;
-    padding: 50px 20px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-
-  .titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .titulo h2 {
-    text-align: left;
-  }
-
-  .section-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .huno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2rem;
-  }
-  .hdos {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-
-  h2 {
-    text-align: right;
-  }
-
-  .p-especial {
-    text-align: left;
+  .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (min-width: 360px) {
     section {
-      padding: 20px;
+      padding: 40px;
     }
   }
 </style>
