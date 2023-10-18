@@ -11,7 +11,7 @@ import MenuSvg from "./MenuSvg.astro";
   <nav>
     <a href="/"><LogoIcono /></a>
     <nav class="nav-desktop">
-      <HeaderLink href="/">inicio</HeaderLink>
+      <HeaderLink href="/">Inicio</HeaderLink>
       <HeaderLink href="/servicios">Servicios</HeaderLink>
       <HeaderLink href="/acercade">Acerca de</HeaderLink>
     </nav>
@@ -33,8 +33,10 @@ import MenuSvg from "./MenuSvg.astro";
         <a onclick="window.modal.showModal(); "><MenuSvg /></a>
         <dialog id="modal">
           <nav class="menu">
-            <button onclick="window.modal.close();">Cerrar</button>
-            <HeaderLink href="/">inicio</HeaderLink>
+            <button class="boton-cierre" onclick="window.modal.close();"
+              >salir</button
+            >
+            <HeaderLink href="/">Inicio</HeaderLink>
             <HeaderLink href="/servicios">Servicios</HeaderLink>
             <HeaderLink href="/acercade">Acerca de</HeaderLink>
           </nav>
@@ -83,6 +85,18 @@ import MenuSvg from "./MenuSvg.astro";
 
   .menu {
     flex-direction: column;
+    width: 350px;
+    height: 600px;
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  .boton-cierre {
+    background: #00000037;
+    text-align: var(--light);
+    font-size: 20px;
+    color: var(--link);
+    border: 1px solid var(--light);
   }
 
   .social-links {
